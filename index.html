@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script_2.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="js-field"></div>
+      <div><button id="setup-button">SETUP</button></div>
+
+      <div id="move">
+        <h3>Please fill in:</h3>
+        <form action="submit" id="input-form">
+          <label for="field">Move (fields labelled '0,0' to '2,2')</label>
+          <input
+            type="text"
+            name="field"
+            required
+            min="3"
+            placeholder="0,0"
+            pattern="[0-2],[0-2]"
+          />
+          <button action="submit" id="move-button">Submit</button>
+        </form>
+      </div>
+
+      <dialog id="setup">
+        <h3>Please enter:</h3>
+        <div id="error"></div>
+        <form action="/" id="setup-form">
+          <label for="player1">Name of Player 1 </label>
+          <input type="text" name="player1" id="player1" required min="1" />
+
+          <label for="player2">Name of Player 2 </label>
+          <input type="text" name="player2" id="player2" required min="1" />
+        </form>
+
+        <button action="submit" id="setup-close">SUBMIT</button>
+      </dialog>
+
+      <button id="start-game">START GAME</button>
+    </div>
+  </body>
+</html>

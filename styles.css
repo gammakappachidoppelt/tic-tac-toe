@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+div.js-field {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 0px;
+  width: 300px;
+  height: 300px;
+}
+
+div.js-field div {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  font-size: 3rem;
+  text-align: center;
+  vertical-align: center;
+}
+
+#A03 {
+}
+
+div#move {
+  position: relative;
+  left: 400px;
+  visibility: hidden;
+}
